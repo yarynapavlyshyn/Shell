@@ -110,6 +110,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="exit_command.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="shell.cpp" />
+    <ClCompile Include="shell_command.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exit_command.h" />
+    <ClInclude Include="shell.h" />
+    <ClInclude Include="shell_command.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
