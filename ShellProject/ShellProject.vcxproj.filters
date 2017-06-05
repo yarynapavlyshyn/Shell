@@ -27,6 +27,9 @@
     <ClCompile Include="exit_command.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="make_directory_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shell.h">
@@ -36,6 +39,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="exit_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="make_directory_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface_command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

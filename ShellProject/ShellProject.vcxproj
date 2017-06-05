@@ -74,7 +74,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\Visual Studio Projects\_Libraries\boost_1_64_0</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>F:\Visual Studio Projects\_Libraries\boost_1_64_0\stage\lib</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -112,11 +116,15 @@
   <ItemGroup>
     <ClCompile Include="exit_command.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="make_directory_command.cpp" />
     <ClCompile Include="shell.cpp" />
     <ClCompile Include="shell_command.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="action.h" />
     <ClInclude Include="exit_command.h" />
+    <ClInclude Include="interface_command.h" />
+    <ClInclude Include="make_directory_command.h" />
     <ClInclude Include="shell.h" />
     <ClInclude Include="shell_command.h" />
   </ItemGroup>
