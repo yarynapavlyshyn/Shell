@@ -30,6 +30,15 @@
     <ClCompile Include="make_directory_command.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="list_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="print_working_directory_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="remove_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shell.h">
@@ -48,6 +57,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="list_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="print_working_directory_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="remove_command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

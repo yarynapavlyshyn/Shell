@@ -115,8 +115,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="exit_command.cpp" />
+    <ClCompile Include="list_command.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_directory_command.cpp" />
+    <ClCompile Include="print_working_directory_command.cpp" />
+    <ClCompile Include="remove_command.cpp" />
     <ClCompile Include="shell.cpp" />
     <ClCompile Include="shell_command.cpp" />
   </ItemGroup>
@@ -124,7 +127,10 @@
     <ClInclude Include="action.h" />
     <ClInclude Include="exit_command.h" />
     <ClInclude Include="interface_command.h" />
+    <ClInclude Include="list_command.h" />
     <ClInclude Include="make_directory_command.h" />
+    <ClInclude Include="print_working_directory_command.h" />
+    <ClInclude Include="remove_command.h" />
     <ClInclude Include="shell.h" />
     <ClInclude Include="shell_command.h" />
   </ItemGroup>

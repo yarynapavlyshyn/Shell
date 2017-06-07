@@ -1,10 +1,12 @@
-﻿  make_directory_command.cpp
+﻿  shell.cpp
+  remove_command.cpp
+  print_working_directory_command.cpp
   Generating Code...
   Compiling...
-  shell_command.cpp
-  shell.cpp
   main.cpp
   exit_command.cpp
   Generating Code...
+  Skipping... (no relevant changes detected)
+  shell_command.cpp
   ShellProject.vcxproj -> F:\Visual Studio Projects\Shell Project\Shell-Project\Debug\ShellProject.exe
   ShellProject.vcxproj -> F:\Visual Studio Projects\Shell Project\Shell-Project\Debug\ShellProject.pdb (Partial PDB)

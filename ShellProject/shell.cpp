@@ -31,7 +31,7 @@ void Shell::Run()
 	if (this->is_running_)
 	{
 		cout << "The shell is already running";
-		throw - 1;
+		throw -1;
 	}
 	this->is_running_ = true;
 
@@ -74,4 +74,15 @@ void Shell::InitializeCommands()
 
 	std::string make_directory_command_keyword = "mkdir";
 	this->commands_.insert({ make_directory_command_keyword, new MakeDirectoryCommand(make_directory_command_keyword) });
+
+	std::string list_command_keyword = "ls";
+	this->commands_.insert({ list_command_keyword, new ListCommand(list_command_keyword) });
+
+	// std::string print_working_directory_command_keyword = "pwd";
+	// this->commands_.insert({ print_working_directory_command_keyword, new PrintWorkingDirectoryCommand(print_working_directory_command_keyword) });
+
+	// Your try
+
+	// Im going to add string split() to shell in this cpp file after you initialize those new commands in here because of merge on git
+	// So you can leave additional options to be additional_options.push_back("-h"); for now, without adding additional options fucntional to commands
 }

@@ -5,6 +5,8 @@
 
 #include "exit_command.h"
 #include "make_directory_command.h"
+#include "list_command.h"
+#include "print_working_directory_command.h"
 
 class Shell
 {

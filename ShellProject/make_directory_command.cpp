@@ -13,11 +13,11 @@ MakeDirectoryCommand::~MakeDirectoryCommand()
 
 void MakeDirectoryCommand::DisplayShortCommandDescription()
 {
-	std::cout << "What the fuck?";
+	
 }
 
 bool MakeDirectoryCommand::Execute(std::vector<std::string> options)
 {
-	this->optional_action_commands_[options[0]]->Invoke();
+	// create directory
 	return true;
 }
