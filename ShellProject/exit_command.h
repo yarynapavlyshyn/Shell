@@ -15,6 +15,7 @@ public:
 	virtual ~ExitCommand();
 
 	void DisplayShortCommandDescription();
+	void InitializeAdditionalCommandTriggers();
 
 	bool Execute(std::vector<std::string> options);
 

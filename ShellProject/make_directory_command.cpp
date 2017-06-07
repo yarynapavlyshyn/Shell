@@ -1,7 +1,5 @@
 #include "make_directory_command.h"
 
-#include <iostream>
-
 MakeDirectoryCommand::MakeDirectoryCommand(std::string commandKeyword) : ShellCommand(commandKeyword)
 {
 }
@@ -16,8 +14,21 @@ void MakeDirectoryCommand::DisplayShortCommandDescription()
 	
 }
 
+void MakeDirectoryCommand::InitializeAdditionalCommandTriggers()
+{
+}
+
 bool MakeDirectoryCommand::Execute(std::vector<std::string> options)
 {
-	// create directory
-	return true;
+	for (std::string s : options)
+	{
+		std::cout << s << std::endl;
+	}
+
+	if (bfs::create_directory(bfs::path { options[0] }))
+	{
+		return true;
+	}
+	perror("Could not create a directory at current path");
+	return false;
 }

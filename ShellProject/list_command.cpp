@@ -18,6 +18,10 @@ void ListCommand::DisplayShortCommandDescription()
 
 }
 
+void ListCommand::InitializeAdditionalCommandTriggers()
+{
+}
+
 bool ListCommand::Execute(std::vector<std::string> options)
 {
 	// List items in directory

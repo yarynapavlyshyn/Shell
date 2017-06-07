@@ -16,6 +16,10 @@ void ExitCommand::DisplayShortCommandDescription()
 {
 }
 
+void ExitCommand::InitializeAdditionalCommandTriggers()
+{
+}
+
 bool ExitCommand::Execute(std::vector<std::string> options)
 {
 	this->shell_->Stop();

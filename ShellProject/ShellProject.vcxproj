@@ -122,6 +122,7 @@
     <ClCompile Include="remove_command.cpp" />
     <ClCompile Include="shell.cpp" />
     <ClCompile Include="shell_command.cpp" />
+    <ClCompile Include="string_utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="action.h" />
@@ -133,6 +134,7 @@
     <ClInclude Include="remove_command.h" />
     <ClInclude Include="shell.h" />
     <ClInclude Include="shell_command.h" />
+    <ClInclude Include="string_utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

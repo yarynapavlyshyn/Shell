@@ -12,19 +12,19 @@ class Shell
 {
 public:
 	Shell();
-	Shell(path& startupPath);
+	Shell(bfs::path& startupPath);
 	~Shell();
 
 	void Run();
 	void Stop();
 	bool IsRunning();
 
-	void SetPath(path& newPath);
+	void SetPath(bfs::path& newPath);
 
 private:
 	bool is_running_;
 	std::unordered_map<std::string, ICommand*> commands_;
-	path current_path_;
+	bfs::path current_path_;
 
 	void InitializeCommands();
 };

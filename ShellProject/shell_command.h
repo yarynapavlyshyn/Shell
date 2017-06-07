@@ -10,7 +10,7 @@
 #include "interface_command.h"
 #include "action.h"
 
-using namespace boost::filesystem;
+namespace bfs = boost::filesystem;
 
 class ShellCommand
 {
@@ -26,6 +26,8 @@ protected:
 	std::string command_keyword_;
 	std::unordered_map<std::string, int> additional_command_triggers_;
 	std::unordered_map<std::string, Action<ShellCommand>*> optional_action_commands_;
+
+	virtual void InitializeAdditionalCommandTriggers() = 0;
 };
 
 #endif // !SHELLPROJECT_SHELL_COMMAND_H_

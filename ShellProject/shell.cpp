@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "shell.h"
+#include "string_utility.h"
 
 using namespace std;
 
@@ -8,12 +9,12 @@ using namespace std;
 Shell::Shell()
 {
 	this->is_running_ = false;
-	this->current_path_ = current_path();
+	this->current_path_ = bfs::current_path();
 
 	this->InitializeCommands();
 }
 
-Shell::Shell(path& startupPath) : Shell()
+Shell::Shell(bfs::path& startupPath) : Shell()
 {
 	this->current_path_ = startupPath;
 }
@@ -39,15 +40,19 @@ void Shell::Run()
 
 	while (this->is_running_)
 	{
-		cout << this->current_path_.string() << " ^_^ ";
+		cout << this->current_path_.string() << ":~ ^_^ ";
 		cin.getline(user_command_input, 1024);
 
-		std::vector<std::string> additional_options;
-		additional_options.push_back("-h");
+		std::string delimiter = " ";
+		std::vector<std::string> additional_options = StringUtility::Split(std::string(user_command_input), delimiter);
 
 		if (this->commands_.find(user_command_input) != this->commands_.end())
 		{
 			this->commands_[user_command_input]->Execute(additional_options);
+		}
+		else
+		{
+			cout << "Unrecognised command. Notice me Senpai!" << endl;
 		}
 	}
 }
@@ -62,7 +67,7 @@ bool Shell::IsRunning()
 	return this->is_running_;
 }
 
-void Shell::SetPath(path& newPath)
+void Shell::SetPath(bfs::path& newPath)
 {
 	this->current_path_ = newPath;
 }
