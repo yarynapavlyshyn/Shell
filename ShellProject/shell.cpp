@@ -86,7 +86,8 @@ void Shell::InitializeCommands()
 	// std::string print_working_directory_command_keyword = "pwd";
 	// this->commands_.insert({ print_working_directory_command_keyword, new PrintWorkingDirectoryCommand(print_working_directory_command_keyword) });
 
-	// Your try
+	// std::string remove_command_keyword = "rm";
+	// this->commands_.insert({ remove_command_keyword, new RemoveCommand(remove_command_keyword) });
 
 	// Im going to add string split() to shell in this cpp file after you initialize those new commands in here because of merge on git
 	// So you can leave additional options to be additional_options.push_back("-h"); for now, without adding additional options fucntional to commands
